@@ -20,9 +20,9 @@ class ProductServiceIT {
 
         MariaDbDataSource dataSource = new MariaDbDataSource();
         try {
-            dataSource.setUrl("jdbc:mariadb://localhost:3306/exam-test?useUnicode=true");
-            dataSource.setUserName("root");
-            dataSource.setPassword("training");
+            dataSource.setUrl("jdbc:mariadb://localhost:3306/exam_webshop?useUnicode=true");
+            dataSource.setUser("examuser");
+            dataSource.setPassword("exampass");
         } catch (SQLException sqle) {
             throw new IllegalStateException("Cannot reach DataBase!", sqle);
         }
